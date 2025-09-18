@@ -3,7 +3,7 @@ import profileImg from "../assets/IMG_9428.jpg";
 import { ArrowDown } from "lucide-react";
 
 export const HeroSection = () => {
-    const roles = ["Software Developer", "Problem Solver", "MERN Developer", "Speed Cuber"];
+    const roles = ["Software Developer", "MERN Developer", "Speed Cuber"];
     const [text, setText] = useState("");
     const [roleIndex, setRoleIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
