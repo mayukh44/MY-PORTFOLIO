@@ -38,7 +38,7 @@ export const HeroSection = () => {
                 <div className="space-y-6">
 
                     {/* Profile Image with PixelTransition */}
-                    <div className="flex justify-center mt-10">
+                    <div className="flex justify-center mt-25">
                         <PixelTransition
                             firstContent={
                                 <img
