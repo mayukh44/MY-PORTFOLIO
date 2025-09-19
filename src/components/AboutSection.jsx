@@ -29,12 +29,12 @@ export const AboutSection = () => {
             <div className="flex flex-col md:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">Get in Touch</a>
 
-              <a
+              {/* <a
                 href="#"
                 className="px-6 py-2 rounded-full border border-primary text-primary bg-white/10 backdrop-blur-lg hover:bg-primary hover:text-white transition duration-300"
               >
                 Download CV
-              </a>
+              </a> */}
             </div>
           </div>
 

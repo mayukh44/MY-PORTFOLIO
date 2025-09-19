@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import profileImg from "../assets/IMG_9428.jpg";
 import { ArrowDown } from "lucide-react";
+import PixelTransition from "./PixelTransition";
 
 export const HeroSection = () => {
     const roles = ["Software Developer", "MERN Developer", "Speed Cuber"];
@@ -36,12 +37,34 @@ export const HeroSection = () => {
             <div className="container max-w-4xl mx-auto text-center z-10">
                 <div className="space-y-6">
 
-                    {/* Profile Image */}
-                    <div className="flex justify-center">
-                        <img
-                            src={profileImg}
-                            alt="Mayukh Biswas"
-                            className="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-primary object-cover"
+                    {/* Profile Image with PixelTransition */}
+                    <div className="flex justify-center mt-10">
+                        <PixelTransition
+                            firstContent={
+                                <img
+                                    src={profileImg}
+                                    alt="Mayukh Biswas"
+                                    style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "50%" }}
+                                />
+                            }
+                            secondContent={
+                                <div
+                                    style={{
+                                        width: "100%",
+                                        height: "100%",
+                                        display: "grid",
+                                        placeItems: "center",
+                                        backgroundColor: "#111",
+                                        borderRadius: "50%"
+                                    }}
+                                >
+                                    <p style={{ fontWeight: 900, fontSize: "1.5rem", color: "#ffffff" }}>Hi ...🖐️</p>
+                                </div>
+                            }
+                            gridSize={12}
+                            pixelColor='#ffffff'
+                            animationStepDuration={0.4}
+                            className="w-32 md:w-40 md:h-40 rounded-full border-2 border-primary overflow-hidden"
                         />
                     </div>
 
@@ -75,8 +98,6 @@ export const HeroSection = () => {
                 <span className="text-sm text-muted-foreground opacity-70 mb-2">Scroll</span>
                 <ArrowDown className="h-5 w-5 text-primary"/>
             </div>
-
-
         </section>
     )
 }
