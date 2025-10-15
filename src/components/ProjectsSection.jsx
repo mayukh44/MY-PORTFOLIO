@@ -4,11 +4,11 @@ const projects = [
   {
     id: 1,
     title: "WanderLust",
-    description: "An Airbnb-inspired website to list and book travel places.",
+    description: "An Airbnb-inspired website to list and review travel stays.",
     image: "/projects/wanderlust.png",
-    tags: ["EJS", "Node.js", "Express.js", "MongoDB", "Joi", "Bootstrap"],
-    demoUrl: "#project",
-    gitHubUrl: "#project",
+    tags: ["EJS", "Node.js", "Express.js", "MongoDB", "Bootstrap"],
+    demoUrl: "https://wanderlust-htap.onrender.com/listings",
+    gitHubUrl: "https://github.com/mayukh44/WANDERLUST",
     status: "Under Production",
   },
 ];
@@ -66,14 +66,14 @@ export const ProjectSection = () => {
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
                     <a
-                      // href={project.demoUrl}
+                      href={project.demoUrl}
                       className="p-2 rounded-full hover:bg-primary/10 transition"
                       target="_blank"
                     >
                       <ExternalLink size={18} />
                     </a>
                     <a
-                      // href={project.gitHubUrl}
+                      href={project.gitHubUrl}
                       className="p-2 rounded-full hover:bg-primary/10 transition"
                       target="_blank"
                     >
