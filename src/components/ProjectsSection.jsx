@@ -3,6 +3,26 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
+    title: "OneGpt",
+    description : "An AI-powered chatbot web application for conversational interactions, chat history, and thread management.",
+    image: "/projects/onegpt.png",
+    tags: ["React", "Node.js", "Express.js", "MongoDB", "OpenAI API"],
+    demoUrl: "https://one-ibram8hj8-mayukh44s-projects.vercel.app",
+    gitHubUrl: "",
+    status: "Live Now",
+  },
+  {
+    id: 2,
+    title: "Social Media Platform",
+    description: "A full-stack social media platform enabling user authentication, profile management, friend requests, posts, likes, comments, and social interactions.",
+    image: "/projects/socialmedia.png",
+    tags: ["Next.js", "Node.js", "Express.js", "MongoDB", "Redux"],
+    demoUrl: "",
+    gitHubUrl: "",
+    status: "Under Production",
+  },
+  {
+    id: 3,
     title: "WanderLust",
     description: "An Airbnb-inspired website to list and review travel stays.",
     image: "/projects/wanderlust.png",
@@ -11,11 +31,14 @@ const projects = [
     gitHubUrl: "https://github.com/mayukh44/WANDERLUST",
     status: "Under Production",
   },
+
 ];
 
 export const ProjectSection = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
+
+      <div>
       <div className="container mx-auto max-w-5xl">
         <h2 className="tex-3xl md:text-4xl font-bold mb-4 text-center">
           Featured <span className="text-primary">Projects</span>
@@ -102,7 +125,10 @@ export const ProjectSection = () => {
           >
             Check My Github <ArrowRight size={16} />
           </a>
-        </div>
+      </div>
+      </div>
+      
     </section>
+    
   );
 };

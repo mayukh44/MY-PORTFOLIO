@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import profileImg from "../assets/IMG_9428.jpg";
 import { ArrowDown } from "lucide-react";
 import PixelTransition from "./PixelTransition";
+import resume from "@/assets/MayukhBiswas.pdf";
 
 export const HeroSection = () => {
     const roles = ["Software Developer", "MERN Developer", "Speed Cuber"];
@@ -80,22 +81,30 @@ export const HeroSection = () => {
                     </h2>
 
                     <p className="text-sm md:text-lg text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3 leading-relaxed">
-                        I am a 3rd-year Computer Science Engineering student at Techno Bengal Institute of Technology, with a strong interest in MERN Stack, DSA, and Data Science. 
-                        Beyond academics, I love solving Rubik’s Cubes, which reflects my curiosity and passion for problem-solving.
-                        I aspire to pursue a career in Software Development where I can apply my skills, continue learning, and deliver impactful solutions.
+                        I'm Mayukh Biswas, a Computer Science Engineering student and Full-Stack Developer.
+                        I enjoy building real-world web applications with React.js, Next.js, Node.js, Express.js, MongoDB, and Redux, while strengthening my problem-solving skills with C/C++ and Java.
+                            
+                        From AI-powered applications to social platforms, I love turning ideas into functional, user-friendly products and continuously learning new technologies along the way.
                     </p>
 
                     <div className="opacity-0 animate-fade-in-delay-4">
-                        <a href="#projects" className="cosmic-button">
-                            View Work
+                        <a href={resume}
+                            className="cosmic-button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View My Resume
                         </a>
                     </div>
+                    
 
                 </div>
             </div>
 
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-                <span className="text-sm text-muted-foreground opacity-70 mb-2">Scroll</span>
+            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce mt-400">
+                <a href="#contact" className="text-sm text-muted-foreground opacity-70 mb-2-button">
+                    Get in Touch
+                </a>
                 <ArrowDown className="h-5 w-5 text-primary"/>
             </div>
         </section>

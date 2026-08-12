@@ -7,15 +7,13 @@ const skills = [
   { name: "CSS", logo: "https://go-skill-icons.vercel.app/api/icons?i=css", category: "frontend" },
   { name: "JavaScript", logo: "https://go-skill-icons.vercel.app/api/icons?i=js", category: "frontend" },
   { name: "React", logo: "https://go-skill-icons.vercel.app/api/icons?i=react", category: "frontend" },
-  { name: "Bootstrap", logo: "https://go-skill-icons.vercel.app/api/icons?i=bootstrap", category: "frontend" },
-  { name: "EJS", logo: "https://go-skill-icons.vercel.app/api/icons?i=ejs", category: "frontend" },
+  { name: "Next.js", logo: "https://go-skill-icons.vercel.app/api/icons?i=nextjs", category: "frontend" },
+  { name: "Redux", logo: "https://go-skill-icons.vercel.app/api/icons?i=redux", category: "frontend" },
 
   
   { name: "Node.js", logo: "https://go-skill-icons.vercel.app/api/icons?i=nodejs", category: "backend" },
   { name: "Express", logo: "https://go-skill-icons.vercel.app/api/icons?i=express", category: "backend" },
-  { name: "SQL", logo: "https://go-skill-icons.vercel.app/api/icons?i=mysql", category: "backend" },
-  { name: "MongoDB", logo: "https://go-skill-icons.vercel.app/api/icons?i=mongodb", category: "backend" },
-  { name: "Joi", logo: "https://go-skill-icons.vercel.app/api/icons?i=mongodb", category: "backend" },
+  
   { name: "C", logo: "https://go-skill-icons.vercel.app/api/icons?i=c", category: "language" },
   { name: "C++", logo: cppLogo, category: "language" },
   { name: "Python", logo: "https://go-skill-icons.vercel.app/api/icons?i=python", category: "language" },
@@ -23,12 +21,18 @@ const skills = [
 
 
 
+  { name: "MongoDB", logo: "https://go-skill-icons.vercel.app/api/icons?i=mongodb", category: "database" },
+  { name: "SQL", logo: "https://go-skill-icons.vercel.app/api/icons?i=mysql", category: "database" },
+
+
   { name: "VSCode", logo: "https://go-skill-icons.vercel.app/api/icons?i=vscode", category: "tools" },
   { name: "GitHub", logo: "https://go-skill-icons.vercel.app/api/icons?i=github", category: "tools" },
+  { name: "Render", logo: "https://go-skill-icons.vercel.app/api/icons?i=render", category: "tools"},
+  { name: "vercel", logo: "https://go-skill-icons.vercel.app/api/icons?i=vercel", category: "tools"},
   { name: "Canva", logo: "https://go-skill-icons.vercel.app/api/icons?i=canva", category: "tools" },
 ];
 
-const categories = ["all", "frontend", "backend", "language", "tools"];
+const categories = ["all", "language", "frontend", "backend", "database", "tools"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
