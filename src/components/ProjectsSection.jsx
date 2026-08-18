@@ -7,7 +7,7 @@ const projects = [
     description : "An AI-powered chatbot web application for conversational interactions, chat history, and thread management.",
     image: "/projects/onegpt.png",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "OpenAI API"],
-    demoUrl: "https://one-ibram8hj8-mayukh44s-projects.vercel.app",
+    demoUrl: "https://one-gpt-nine.vercel.app",
     gitHubUrl: "",
     status: "Live Now",
   },
@@ -17,7 +17,7 @@ const projects = [
     description: "A full-stack social media platform enabling user authentication, profile management, friend requests, posts, likes, comments, and social interactions.",
     image: "/projects/socialmedia.png",
     tags: ["Next.js", "Node.js", "Express.js", "MongoDB", "Redux"],
-    demoUrl: "",
+    demoUrl: "https://social-media-platform-five-sepia.vercel.app",
     gitHubUrl: "",
     status: "Under Production",
   },
@@ -96,7 +96,7 @@ export const ProjectSection = () => {
                       <ExternalLink size={18} />
                     </a>
                     <a
-                      href={project.gitHubUrl}
+                      // href={project.gitHubUrl}
                       className="p-2 rounded-full hover:bg-primary/10 transition"
                       target="_blank"
                     >

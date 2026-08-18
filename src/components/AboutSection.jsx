@@ -57,8 +57,8 @@ export const AboutSection = () => {
           </div>
 
           <div className="flex flex-col md:flex-row gap-4 pt-4 justify-center">
-              <a href={resume} className="cosmic-button" target="_blank" rel="noopener noreferrer" download>
-                Download Resume
+              <a href="#contact" className="cosmic-button">
+                Stay In Touch
               </a>
             </div>
           </div>
