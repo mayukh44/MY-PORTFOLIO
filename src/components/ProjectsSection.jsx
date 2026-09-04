@@ -21,16 +21,16 @@ const projects = [
     gitHubUrl: "",
     status: "Under Production",
   },
-  {
-    id: 3,
-    title: "WanderLust",
-    description: "An Airbnb-inspired website to list and review travel stays.",
-    image: "/projects/wanderlust.png",
-    tags: ["EJS", "Node.js", "Express.js", "MongoDB", "Bootstrap"],
-    demoUrl: "https://wanderlust-htap.onrender.com/listings",
-    gitHubUrl: "https://github.com/mayukh44/WANDERLUST",
-    status: "Under Production",
-  },
+  // {
+  //   id: 3,
+  //   title: "WanderLust",
+  //   description: "An Airbnb-inspired website to list and review travel stays.",
+  //   image: "/projects/wanderlust.png",
+  //   tags: ["EJS", "Node.js", "Express.js", "MongoDB", "Bootstrap"],
+  //   demoUrl: "https://wanderlust-htap.onrender.com/listings",
+  //   gitHubUrl: "https://github.com/mayukh44/WANDERLUST",
+  //   status: "Under Production",
+  // },
 
 ];
 
