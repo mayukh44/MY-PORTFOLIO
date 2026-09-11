@@ -1,5 +1,6 @@
 
 import { AboutSection } from "../components/AboutSection"
+import AchievementSection from "../components/AchievementSection"
 import { ContactSection } from "../components/ContactSection"
 import { HeroSection } from "../components/HeroSection"
 import { NavBar } from "../components/NavBar"
@@ -33,6 +34,8 @@ export const Home = () => {
       <SkillsSection/>
 
       <ProjectSection/>
+
+      <AchievementSection/>
 
       <ContactSection/>
 

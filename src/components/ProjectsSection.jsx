@@ -38,7 +38,6 @@ export const ProjectSection = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
 
-      <div>
       <div className="container mx-auto max-w-5xl">
         <h2 className="tex-3xl md:text-4xl font-bold mb-4 text-center">
           Featured <span className="text-primary">Projects</span>
@@ -114,7 +113,7 @@ export const ProjectSection = () => {
               )}
             </div>
           ))}
-        </div>
+
       </div>
 
       <div className="text-center mt-12">
