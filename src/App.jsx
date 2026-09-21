@@ -6,7 +6,7 @@ import { Toaster } from './components/ui/toaster.jsx'
 function App() {
 
   return (
-    <>
+    <div className='select-none pointer-events-none'>
     <BrowserRouter>
       <Routes>
         <Route index element={<Home/>}/>
@@ -15,7 +15,7 @@ function App() {
     </BrowserRouter>
 
     <Toaster/>
-    </>
+    </div>
   )
 }
 
